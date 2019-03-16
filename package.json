@@ -1,0 +1,11 @@
+{
+  "name": "js1k_pixel_editor",
+  "version": "1.0.0",
+  "description": "Pixel art editor for the js1k competition in 2019",
+  "main": "pixel-editor.js",
+  "author": "Rubén López",
+  "license": "GPL",
+  "devDependencies": {
+    "regpack": "^5.0.1"
+  }
+}
