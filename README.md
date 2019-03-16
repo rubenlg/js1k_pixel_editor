@@ -1,5 +1,7 @@
 # Pixel art editor for the js1k competition in 2019
 
+![](demo.gif)
+
 ## Controls
 
  - Click on the palette to switch color.
