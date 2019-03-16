@@ -26,9 +26,9 @@
 
  ## Minimizing
 
-1. Replace const and let with var.
+1. Replace const and let with var. For example, with sed: `sed -e s/const\ /var\ /g -e s/let\ /var\ /g pixel-editor.js`.
 2. Run Closure compiler with the following flags: `-O advanced --rewrite_polyfills=false --language_out ES6 --charset UTF-8 --strict_mode_input=false`.
-3. Run after-closure.js
+3. Run after-closure.js with nodejs.
 4. Run regpack with the following flags: `--crushGainFactor 1 --crushLengthFactor 0 --crushCopiesFactor 0`
 
 These are the minimizers and flags that worked well for this particular code. I aways ran multiple minimizers on every build (including uglify-es and jscrush) and picked the combination that produced the smallest result.
